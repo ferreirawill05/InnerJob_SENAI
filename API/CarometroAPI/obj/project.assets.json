@@ -7548,11 +7548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\48544763898.INFOSCS\\source\\repos\\CarometroAPI\\CarometroAPI\\CarometroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
       "projectName": "CarometroAPI",
-      "projectPath": "C:\\Users\\48544763898.INFOSCS\\source\\repos\\CarometroAPI\\CarometroAPI\\CarometroAPI.csproj",
+      "projectPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
       "packagesPath": "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\48544763898.INFOSCS\\source\\repos\\CarometroAPI\\CarometroAPI\\obj\\",
+      "outputPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\48544763898.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",

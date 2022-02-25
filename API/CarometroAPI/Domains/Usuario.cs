@@ -10,6 +10,7 @@ namespace CarometroAPI.Domains
         public Usuario()
         {
             Alunos = new HashSet<Aluno>();
+            Crachas = new HashSet<Cracha>();
             Professors = new HashSet<Professor>();
         }
 
@@ -25,6 +26,7 @@ namespace CarometroAPI.Domains
         public virtual Instituicao IdInstituicaoNavigation { get; set; }
         public virtual TipoUsuario IdTipoUsuarioNavigation { get; set; }
         public virtual ICollection<Aluno> Alunos { get; set; }
+        public virtual ICollection<Cracha> Crachas { get; set; }
         public virtual ICollection<Professor> Professors { get; set; }
     }
 }

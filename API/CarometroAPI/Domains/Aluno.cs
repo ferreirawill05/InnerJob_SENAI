@@ -7,11 +7,6 @@ namespace CarometroAPI.Domains
 {
     public partial class Aluno
     {
-        public Aluno()
-        {
-            CrachaAlunos = new HashSet<CrachaAluno>();
-        }
-
         public short IdAluno { get; set; }
         public byte? IdTurma { get; set; }
         public short? IdUsuario { get; set; }
@@ -19,6 +14,5 @@ namespace CarometroAPI.Domains
 
         public virtual Turma IdTurmaNavigation { get; set; }
         public virtual Usuario IdUsuarioNavigation { get; set; }
-        public virtual ICollection<CrachaAluno> CrachaAlunos { get; set; }
     }
 }

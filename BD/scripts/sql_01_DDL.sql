@@ -57,14 +57,8 @@ CREATE TABLE aluno(
 )
 GO
 
-CREATE TABLE crachaProfessor(
+CREATE TABLE cracha(
 	idCracha SMALLINT PRIMARY KEY IDENTITY(1,1),
-	idProfessor SMALLINT FOREIGN KEY REFERENCES professor(idProfessor),
-	token VARCHAR(256) UNIQUE NOT NULL,
-)
-
-CREATE TABLE crachaAluno(
-	idCracha SMALLINT PRIMARY KEY IDENTITY(1,1),
-	idAluno SMALLINT FOREIGN KEY REFERENCES aluno(idAluno),
+	idUsuario SMALLINT FOREIGN KEY REFERENCES usuario(idUsuario),
 	token VARCHAR(256) UNIQUE NOT NULL,
 )

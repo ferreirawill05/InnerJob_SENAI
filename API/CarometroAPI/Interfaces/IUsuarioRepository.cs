@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace CarometroAPI.Interfaces
 {
-    public interface IUsuario
+    public interface IUsuarioRepository
     {
         Usuario Login(string email, string senha);
-        Usuario BuscarPorId(int id);
-        Usuario Cadastrar(Usuario novoUsuario);
+        Usuario BuscarPorId(int idUsuario);
+        void Cadastrar(Usuario novoUsuario);
         List<Usuario> Listar();
         void Atualizar(Usuario usuarioAtualizado);
         void Deletar(int idUsuario);

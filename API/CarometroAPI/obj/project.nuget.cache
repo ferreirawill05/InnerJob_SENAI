@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "E4Zx8FWEk43B+Lwe4zNPf3xJyiITLiv8Vqx/sEgHZw5aZahR02MDeVIYLYrvAI3Jp3Fti+lbeICOHxlP8ilGQA==",
+  "dgSpecHash": "5L4B5XDNFGfdi1bRAyIZyIb0JMCsoEKHFs2qlrgMU7L2PT+2pElSAFs0/qKac2yfvfyECdoJqR+IfpbodHgyDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.14\\microsoft.aspnetcore.authentication.jwtbearer.5.0.14.nupkg.sha512",
     "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.14\\microsoft.aspnetcore.jsonpatch.5.0.14.nupkg.sha512",

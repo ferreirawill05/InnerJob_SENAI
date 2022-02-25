@@ -3,11 +3,10 @@ using System.Collections.Generic;
 
 namespace CarometroAPI.Interfaces
 {
-    public interface IAluno
+    public interface IInstituicaoRepository
     {
-        Aluno Cadastrar(Aluno novoUsuario);
-        List<Aluno> Listar();
-        void Atualizar(Aluno usuarioAtualizado);
+        void Cadastrar(Instituicao novoUsuario);
+        void Atualizar(Instituicao usuarioAtualizado);
         void Deletar(int idUsuario);
     }
 }

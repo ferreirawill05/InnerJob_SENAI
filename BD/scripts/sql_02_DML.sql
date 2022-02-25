@@ -1,5 +1,5 @@
-/*USE CAROMETRO
-GO*/
+--USE CAROMETRO
+--GO
 
 INSERT INTO tipoUsuario(nomeTipoUsuario)
 VALUES

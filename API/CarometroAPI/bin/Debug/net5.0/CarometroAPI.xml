@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarometroAPI</name>
+    </assembly>
+    <members>
+        <member name="P:CarometroAPI.Controllers.UsuariosController._usuarioRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Listar">
+            <summary>
+            Lista todos os Usuários existentes
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário pelo id
+            </summary>
+            <param name="idUsuario">id do usuário a ser buscado</param>
+            <returns>Um usuário encontrado com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.salvaImagem">
+            <summary>
+            Consulta a foto de perfil de um usuário
+            </summary>
+            <returns>A foto em base64</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Cadastrar(CarometroAPI.Domains.Usuario)">
+            <summary>
+            Cadastra um Usuário
+            </summary>
+            <param name="novoUsuario">Usuario a ser cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.postDir(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Salva uma imagem de perfil do usuário
+            </summary>
+            <param name="arquivo">imagem a ser salva</param>
+            <returns>Status code 200 - OK</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Atualizar(CarometroAPI.Domains.Usuario)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="usuarioAtualizado">Objeto com as novas informações do Usuário e o id do usuário a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:CarometroAPI.Controllers.UsuariosController.Deletar(System.Int32)" -->
+    </members>
+</doc>

@@ -50,25 +50,27 @@ namespace CarometroAPI.Repositories
             ctx.SaveChanges();
         }
 
-        static int GerarToken()
+        public int GerarToken()
         {
             List<int> lista = new List<int>();
+            Random R = new Random();
+            int retorno = 0;
 
-            foreach(int list in lista)
+            foreach (int list in lista)
             {
-                int numer = Random.Next(999999999);
+                int numer = R.Next(999999999);
 
                 if(numer == list) {
 
-                    numer = Random.Next(999999999);
+                    numer = R.Next(999999999);
                 }
                 else
                 {
                     lista.Add(numer);
                 }
-                return numer;
+                    retorno = numer;
             }
-            return 0;
+            return retorno;
         }
 
         public List<Cracha> Listar()

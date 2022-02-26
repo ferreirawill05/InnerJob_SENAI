@@ -13,7 +13,7 @@ namespace CarometroAPI.Interfaces
         void Atualizar(Usuario usuarioAtualizado);
         void Deletar(int idUsuario);
         void SalvarImagem(IFormFile foto, int idUsuario);
-        void ConsultarImagem(int idUsuario);
+        string ConsultarImagem(int idUsuario);
         void CriarPasta();
 
     }

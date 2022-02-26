@@ -3,6 +3,7 @@ using CarometroAPI.Domains;
 using CarometroAPI.Interfaces;
 using CarometroAPI.Utils;
 using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -68,9 +69,20 @@ namespace CarometroAPI.Repositories
             ctx.SaveChanges();
         }
 
-        public void ConsultarImagem(int idUsuario)
+        public string ConsultarImagem(int idUsuario)
         {
-            throw new System.NotImplementedException();
+            CriarPasta();
+
+            string nome_novo = idUsuario.ToString() + ".png";
+            string caminho = Path.Combine("Perfil", nome_novo);
+
+            if (File.Exists(caminho))
+            {
+                byte[] bytesArquivo = File.ReadAllBytes(caminho);
+                return Convert.ToBase64String(bytesArquivo);
+            }
+
+            return null;
         }
 
         public void CriarPasta()

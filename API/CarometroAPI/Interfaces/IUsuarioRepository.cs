@@ -9,7 +9,7 @@ namespace CarometroAPI.Interfaces
         Usuario Login(string email, string senha);
         Usuario BuscarPorId(int idUsuario);
         void Cadastrar(Usuario novoUsuario);
-        List<Usuario> Listar();
+        System.Collections.Generic.List<Usuario> Listar();
         void Atualizar(Usuario usuarioAtualizado);
         void Deletar(int idUsuario);
         void SalvarImagem(IFormFile foto, int idUsuario);

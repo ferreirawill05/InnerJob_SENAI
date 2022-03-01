@@ -1,6 +1,7 @@
 ﻿using CarometroAPI.Contexts;
 using CarometroAPI.Domains;
 using CarometroAPI.Interfaces;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CarometroAPI.Repositories
@@ -10,7 +11,7 @@ namespace CarometroAPI.Repositories
         CarometroContext ctx = new CarometroContext();
         public void Atualizar(Instituicao instituicaoAtualizada)
         {
-            Instituicao instituicaoBuscada = ctx.Instituicaos.FirstOrDefault(i => i.IdInstituicao == instituicaoAtualizada.IdInstituicao);
+            Instituicao instituicaoBuscada = BuscarPorId(instituicaoAtualizada.IdInstituicao);
 
             if (instituicaoBuscada.NomeInstituicao != null)
             {
@@ -32,6 +33,11 @@ namespace CarometroAPI.Repositories
             ctx.SaveChanges();
         }
 
+        public Instituicao BuscarPorId(int idInstituicao)
+        {
+            return ctx.Instituicaos.FirstOrDefault(u => u.IdInstituicao == idInstituicao);
+        }
+
         public void Cadastrar(Instituicao novaInstituicao)
         {
             ctx.Instituicaos.Add(novaInstituicao);
@@ -41,11 +47,16 @@ namespace CarometroAPI.Repositories
 
         public void Deletar(int idInstituicao)
         {
-            Instituicao instituicaoBuscada = ctx.Instituicaos.FirstOrDefault(i => i.IdInstituicao == idInstituicao);
+            Instituicao instituicaoBuscada = BuscarPorId(idInstituicao);
 
             ctx.Instituicaos.Remove(instituicaoBuscada);
 
             ctx.SaveChanges();
+        }
+
+        public List<Instituicao> Listar()
+        {
+            return ctx.Instituicaos.ToList();
         }
     }
 }

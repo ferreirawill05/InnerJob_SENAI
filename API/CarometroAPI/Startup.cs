@@ -67,8 +67,8 @@ namespace CarometroAPI
                         ValidateLifetime = true,
                         IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("chave-autenticacao-Carometro")),
                         ClockSkew = TimeSpan.FromMinutes(30),
-                        ValidIssuer = "spmed.webAPI",
-                        ValidAudience = "spmed.webAPI"
+                        ValidIssuer = "carometro.webAPI",
+                        ValidAudience = "carometro.webAPI"
                     };
                 });
         }

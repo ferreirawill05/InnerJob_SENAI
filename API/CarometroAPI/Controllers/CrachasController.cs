@@ -92,6 +92,11 @@ namespace CarometroAPI.Controllers
             }
         }
 
+        /// <summary>
+        /// Gera um novo token aleatório pro cracha
+        /// </summary>
+        /// <param name="idCracha">id do cracha a ter seu token atualizado</param>
+        /// <returns>Um status code 204 - No content</returns>
         [HttpPatch("{idCracha}")]
         public IActionResult GerarToken(int idCracha)
         {

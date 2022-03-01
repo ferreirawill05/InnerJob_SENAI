@@ -55,7 +55,7 @@ namespace CarometroAPI.Repositories
             ctx.SaveChanges();
         }
 
-        public System.Collections.Generic.List<Aluno> Listar()
+        public List<Aluno> Listar()
         {
             return ctx.Alunos.ToList();
         }

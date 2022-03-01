@@ -4,10 +4,8 @@ using CarometroAPI.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CarometroAPI.Controllers
 {
@@ -146,7 +144,7 @@ namespace CarometroAPI.Controllers
             }
         }
 
-        // <summary>
+        /// <summary>
         /// Deleta um usuário
         /// </summary>
         /// <param name="idUsuario">id do Usuário a ser deletado</param>

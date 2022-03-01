@@ -7,9 +7,9 @@ namespace CarometroAPI.Interfaces
     {
         Cracha BuscarPorId(int idCracha);
         void Cadastrar(Cracha novoCracha);
-        System.Collections.Generic.List<Cracha> Listar();
+        List<Cracha> Listar();
         void Atualizar(Cracha crachaAtualizado);
         void Deletar(int idCracha);
-        int GerarToken();
+        void GerarToken(int idCracha);
     }
 }

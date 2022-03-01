@@ -10,6 +10,9 @@ namespace CarometroAPI.Repositories
     public class CrachaRepository : ICrachaRepository
     {
         CarometroContext ctx = new CarometroContext();
+        
+        List<int> lista = new List<int>();
+        
         public void Atualizar(Cracha crachaAtualizado)
         {
             Cracha crachaBuscado = BuscarPorId(crachaAtualizado.IdCracha);
@@ -50,11 +53,11 @@ namespace CarometroAPI.Repositories
             ctx.SaveChanges();
         }
 
-        public int GerarToken()
+        public void GerarToken(int idCracha)
         {
-            List<int> lista = new List<int>();
+            Cracha crachaBuscado = BuscarPorId(idCracha);
+
             Random R = new Random();
-            int retorno = 0;
 
             foreach (int list in lista)
             {
@@ -67,10 +70,13 @@ namespace CarometroAPI.Repositories
                 else
                 {
                     lista.Add(numer);
+                    crachaBuscado.Token = numer.ToString();
+
+                    ctx.Crachas.Update(crachaBuscado);
+
+                    ctx.SaveChanges();
                 }
-                    retorno = numer;
             }
-            return retorno;
         }
 
         public List<Cracha> Listar()

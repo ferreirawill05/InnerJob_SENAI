@@ -1,12 +1,8 @@
 ﻿using CarometroAPI.Domains;
 using CarometroAPI.Interfaces;
 using CarometroAPI.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CarometroAPI.Controllers
 {
@@ -96,7 +92,7 @@ namespace CarometroAPI.Controllers
             }
         }
 
-        // <summary>
+        /// <summary>
         /// Deleta uma instituicao
         /// </summary>
         /// <param name="idUsuario">id da Instituicao a ser deletada</param>

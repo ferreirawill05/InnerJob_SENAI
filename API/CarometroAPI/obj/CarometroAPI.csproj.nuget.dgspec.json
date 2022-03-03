@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj": {}
+    "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj": {
+    "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
         "projectName": "CarometroAPI",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
+        "projectPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
+        "packagesPath": "C:\\Users\\47509398894.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47509398894.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,6 +85,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

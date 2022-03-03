@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarometroAPI</name>
+    </assembly>
+    <members>
+        <member name="P:CarometroAPI.Controllers.AlunosController._alunoRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.Listar">
+            <summary>
+            Lista todos os Alunos existentes
+            </summary>
+            <returns>Uma lista de alunos</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um aluno pelo id
+            </summary>
+            <param name="idAluno">id do aluno a ser buscado</param>
+            <returns>Um aluno encontrado com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.Cadastrar(CarometroAPI.Domains.Aluno)">
+            <summary>
+            Cadastra um Aluno
+            </summary>
+            <param name="novoAluno">Aluno a ser cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.Atualizar(CarometroAPI.Domains.Aluno)">
+            <summary>
+            Atualiza um aluno existente
+            </summary>
+            <param name="alunoAtualizado">Objeto com as novas informações do Aluno e o id do aluno a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.AlunosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um aluno
+            </summary>
+            <param name="idAluno">id do Aluno a ser deletado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="P:CarometroAPI.Controllers.CrachasController._crachaRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.Listar">
+            <summary>
+            Lista todos os Crachás existentes
+            </summary>
+            <returns>Uma lista de crachás</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um crachá pelo id
+            </summary>
+            <param name="idCracha">id do crachá a ser buscado</param>
+            <returns>Um crachá encontrado com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.Cadastrar(CarometroAPI.Domains.Cracha)">
+            <summary>
+            Cadastra um Cracha
+            </summary>
+            <param name="novoCracha">Cracha a ser cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.Atualizar(CarometroAPI.Domains.Cracha)">
+            <summary>
+            Atualiza um cracha existente
+            </summary>
+            <param name="crachaAtualizado">Objeto com as novas informações do Cracha e o id do cracha a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.GerarToken(System.Int32)">
+            <summary>
+            Gera um novo token aleatório pro cracha
+            </summary>
+            <param name="idCracha">id do cracha a ter seu token atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.Deletar(System.Int32)">
+            <summary>
+            Deleta um cracha
+            </summary>
+            <param name="idCracha">id do Cracha a ser deletado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="P:CarometroAPI.Controllers.InstituicoesController._instituicaoRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.Listar">
+            <summary>
+            Lista todas as Instituições existentes
+            </summary>
+            <returns>Uma lista de instituições</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca uma instituicao pelo id
+            </summary>
+            <param name="idInstituicao">id da instituicao a ser buscada</param>
+            <returns>Uma instituicao encontrada com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.Cadastrar(CarometroAPI.Domains.Instituicao)">
+            <summary>
+            Cadastra uma Instituição
+            </summary>
+            <param name="novoInstituicao">Instituicao a ser cadastrada</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.Atualizar(CarometroAPI.Domains.Instituicao)">
+            <summary>
+            Atualiza uma instituicao existente
+            </summary>
+            <param name="instituicaoAtualizada">Objeto com as novas informações da instituicao e o id da instituicao a ser atualizada</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.InstituicoesController.Deletar(System.Int32)">
+            <summary>
+            Deleta uma instituicao
+            </summary>
+            <param name="idUsuario">id da Instituicao a ser deletada</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.LoginController.Login(CarometroAPI.ViewModels.LoginViewModel)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="login">Objeto login que contém o e-mail e a senha do usuário</param>
+            <returns>Retorna um token com as informações do usuário</returns>
+            dominio/api/Login
+        </member>
+        <member name="P:CarometroAPI.Controllers.ProfessoresController._professorRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.Listar">
+            <summary>
+            Lista todos os professores existentes
+            </summary>
+            <returns>Uma lista de professores</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um professor pelo id
+            </summary>
+            <param name="idProfessor">id do professor a ser buscado</param>
+            <returns>Um professor encontrado com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.Cadastrar(CarometroAPI.Domains.Professor)">
+            <summary>
+            Cadastra um Professor
+            </summary>
+            <param name="novoProfessor">Professor a ser cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.Atualizar(CarometroAPI.Domains.Professor)">
+            <summary>
+            Atualiza um professor existente
+            </summary>
+            <param name="professorAtualizado">Objeto com as novas informações do Professor e o id do professor a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.ProfessoresController.Deletar(System.Int32)">
+            <summary>
+            Deleta um professor
+            </summary>
+            <param name="idProfessor">id do Professor a ser deletado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="P:CarometroAPI.Controllers.UsuariosController._usuarioRepository">
+            <summary>
+            Objeto que irá receber todos os métodos da interface
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia o objeto para que haja referência às implementações no repositório
+            </summary>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Listar">
+            <summary>
+            Lista todos os Usuários existentes
+            </summary>
+            <returns>Uma lista de usuários</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuário pelo id
+            </summary>
+            <param name="idUsuario">id do usuário a ser buscado</param>
+            <returns>Um usuário encontrado com status code - 200</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.salvaImagem">
+            <summary>
+            Consulta a foto de perfil de um usuário
+            </summary>
+            <returns>A foto em base64</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Cadastrar(CarometroAPI.Domains.Usuario)">
+            <summary>
+            Cadastra um Usuário
+            </summary>
+            <param name="novoUsuario">Usuario a ser cadastrado</param>
+            <returns>Um status code 201 - Created</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.postDir(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Salva uma imagem de perfil do usuário
+            </summary>
+            <param name="arquivo">imagem a ser salva</param>
+            <returns>Status code 200 - OK</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Atualizar(CarometroAPI.Domains.Usuario)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="usuarioAtualizado">Objeto com as novas informações do Usuário e o id do usuário a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuário
+            </summary>
+            <param name="idUsuario">id do Usuário a ser deletado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+    </members>
+</doc>

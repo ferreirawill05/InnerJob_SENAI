@@ -16,12 +16,12 @@ export default class header extends Component {
         return (
             <header>
                 <div class="container container_header">
-                    <Link to={'home'}><img src={Logo_Sesi} alt="logo"/></Link>
+                    <Link to={'/'}><img src={Logo_Sesi} alt="logo"/></Link>
                     <nav class="menu_header">
                         <img class="icone_cracha" src={icone_lista} alt="icone lista"/>
-                            <Link to={'/cracha'}>Meu crachá</Link>
+                            <Link to={'/meucracha'}>Meu crachá</Link>
                             <img class="icone_carometro" src={icone_agenda} alt="icone carometro"/>
-                                <Link to={'/carometro'}>Carômetro</Link>
+                                <Link to={'/listar'}>Carômetro</Link>
                                 <img class="icone_perfil" src={icone_perfil} alt="icone perfil"/>
                                     <Link to={'/perfil'}>Perfil</Link>
                                 </nav>

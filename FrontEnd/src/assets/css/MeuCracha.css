@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container_cracha{
+    /* background-color: blue; */
+    width: 100vw;
+    height: 100vh;
+    margin: 100 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .cracha_aluno {
+    width: 290px;
+    height: 400px;
+    /* align-items: center; */
+
+
+.seta_retorno {
+    width: 40px;
+    height: 40px;
+}
+
+.border{
+    border: 18px solid #66249A;
+    border-radius: 25px;
+    width: 290px;
+    height: 400px;
+    background-image: url(../img/img_padrao_cracha.png);
+}
+
+.cracha_aluno{
+    width: 254px;
+    height: 364px;
+}
+
+.logo{
+    height: 40px;
+    border: 10px solid red;
+}
+
+.aluno{
+    height: 200px;
+    
+}
+
+.fundo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}

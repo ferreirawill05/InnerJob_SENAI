@@ -7586,19 +7586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ricardo\\.nuget\\packages\\": {}
+    "C:\\Users\\50928811867.INFOSCS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
       "projectName": "CarometroAPI",
-      "projectPath": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
-      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
+      "projectPath": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "packagesPath": "C:\\Users\\50928811867.INFOSCS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\50928811867.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7677,7 +7677,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

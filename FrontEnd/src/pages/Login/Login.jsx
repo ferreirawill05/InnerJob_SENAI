@@ -10,8 +10,12 @@ export default class Login extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      email: 'adm@email.com',
-      senha: 'adm123',
+      // email: 'adm@email.com',
+      // senha: 'adm123',
+      // email: 'professor@email.com',
+      // senha: 'professor123',
+      email: 'aluno@email.com',
+      senha: 'aluno123',
       erroMensagem: '',
       isLoading: false
     };
@@ -32,13 +36,16 @@ export default class Login extends Component {
 
           switch (parseJwt().role) {
             case '1':
-              this.props.history.push('/a')
+              //adm
+              this.props.history.push('/cadastro')
               break;
             case '2':
-              this.props.history.push('/a')
+              //aluno
+              this.props.history.push('/meucracha')
               break;
             case '3':
-              this.props.history.push('/a')
+              //prof
+              this.props.history.push('/cracha')
               break;
             default:
               this.props.history.push('/')

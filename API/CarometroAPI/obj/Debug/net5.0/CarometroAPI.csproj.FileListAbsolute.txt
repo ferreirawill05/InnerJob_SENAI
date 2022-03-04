@@ -199,3 +199,13 @@ C:\Users\Usuario\Desktop\InnerJob_SENAI\API\CarometroAPI\obj\Debug\net5.0\Carome
 C:\Users\Usuario\Desktop\InnerJob_SENAI\API\CarometroAPI\obj\Debug\net5.0\CarometroAPI.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\CarometroAPI.xml
 C:\Users\Usuario\Desktop\InnerJob_SENAI\API\CarometroAPI\obj\Debug\net5.0\CarometroAPI.xml
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\CarometroAPI.StaticWebAssets.xml
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\CarometroAPI.xml
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\Google.Authenticator.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\Otp.NET.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\QRCoder.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\48544763898.INFOSCS\Desktop\InnerJob_SENAI\API\CarometroAPI\obj\Debug\net5.0\CarometroAPI.xml

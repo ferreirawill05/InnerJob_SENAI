@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj": {}
+    "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj": {
+    "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
         "projectName": "CarometroAPI",
-        "projectPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
-        "packagesPath": "C:\\Users\\47509398894.INFOSCS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\obj\\",
+        "projectPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+        "packagesPath": "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\47509398894.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48544763898.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[4.0.2, )"
             },
+            "GoogleAuthenticator": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.14, )"
@@ -66,6 +70,10 @@
               "target": "Package",
               "version": "[5.0.14, )"
             },
+            "Otp.NET": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -85,12 +93,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -99,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

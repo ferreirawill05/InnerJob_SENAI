@@ -111,7 +111,7 @@ namespace CarometroAPI.Repositories
 
         public Usuario Login(string email, string senha)
         {
-            Usuario usuarioEncontrado = ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+            Usuario usuarioEncontrado = ctx.Usuarios.FirstOrDefault(u => u.Email == email);
 
             if (usuarioEncontrado != null)
             {

@@ -13,7 +13,7 @@ namespace CarometroAPI.Domains
         }
 
         public byte IdPeriodo { get; set; }
-        public byte NomePeriodo { get; set; }
+        public string NomePeriodo { get; set; }
 
         public virtual ICollection<Turma> Turmas { get; set; }
     }

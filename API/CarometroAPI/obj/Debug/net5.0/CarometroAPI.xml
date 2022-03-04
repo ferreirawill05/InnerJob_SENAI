@@ -71,6 +71,13 @@
             <param name="idCracha">id do crachá a ser buscado</param>
             <returns>Um crachá encontrado com status code - 200</returns>
         </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.ValidarToken(System.Int32)">
+            <summary>
+            Valida um token
+            </summary>
+            <param name="idCracha">id do crachá a ser validado</param>
+            <returns>Um resposta booleana encontrado com status code - 200</returns>
+        </member>
         <member name="M:CarometroAPI.Controllers.CrachasController.Cadastrar(CarometroAPI.Domains.Cracha)">
             <summary>
             Cadastra um Cracha
@@ -83,6 +90,13 @@
             Atualiza um cracha existente
             </summary>
             <param name="crachaAtualizado">Objeto com as novas informações do Cracha e o id do cracha a ser atualizado</param>
+            <returns>Um status code 204 - No content</returns>
+        </member>
+        <member name="M:CarometroAPI.Controllers.CrachasController.GerarToken(System.Int32)">
+            <summary>
+            Gera um novo token aleatório pro cracha
+            </summary>
+            <param name="idCracha">id do cracha a ter seu token atualizado</param>
             <returns>Um status code 204 - No content</returns>
         </member>
         <member name="M:CarometroAPI.Controllers.CrachasController.Deletar(System.Int32)">

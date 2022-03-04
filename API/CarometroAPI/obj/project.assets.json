@@ -11,6 +11,18 @@
           "lib/net5.0/BCrypt.Net-Next.dll": {}
         }
       },
+      "GoogleAuthenticator/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "QRCoder": "1.4.3"
+        },
+        "compile": {
+          "lib/net5.0/Google.Authenticator.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Google.Authenticator.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -460,7 +472,7 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.1.0": {
+      "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -521,10 +533,10 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/4.7.0": {
+      "Microsoft.Win32.SystemEvents/5.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
+          "Microsoft.NETCore.Platforms": "5.0.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {}
@@ -607,6 +619,27 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Otp.NET/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Otp.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Otp.NET.dll": {}
+        }
+      },
+      "QRCoder/1.4.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.3"
+        },
+        "compile": {
+          "lib/net5.0/QRCoder.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/QRCoder.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -1064,17 +1097,16 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {}
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
-          "Microsoft.Win32.SystemEvents": "4.7.0"
+          "Microsoft.Win32.SystemEvents": "5.0.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+          "lib/netcoreapp3.0/System.Drawing.Common.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
@@ -2255,6 +2287,24 @@
         "lib/netstandard2.1/BCrypt.Net-Next.xml"
       ]
     },
+    "GoogleAuthenticator/2.4.0": {
+      "sha512": "3QE8YEXo/OKNUjYC5YT9Yv76ah65a7w56zOSw+u/HhjSh2FADyEyG1AhOeslagQbtnd9X+6SOE5VyOsffWlz1w==",
+      "type": "package",
+      "path": "googleauthenticator/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "googleauthenticator.2.4.0.nupkg.sha512",
+        "googleauthenticator.nuspec",
+        "lib/net45/Google.Authenticator.dll",
+        "lib/net45/Google.Authenticator.pdb",
+        "lib/net5.0/Google.Authenticator.dll",
+        "lib/net5.0/Google.Authenticator.pdb",
+        "lib/netstandard2.0/Google.Authenticator.dll",
+        "lib/netstandard2.0/Google.Authenticator.pdb"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -2955,17 +3005,18 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.1.0": {
-      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/3.1.0",
+      "path": "microsoft.netcore.platforms/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -3089,25 +3140,24 @@
         "version.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/4.7.0": {
-      "sha512": "mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
+    "Microsoft.Win32.SystemEvents/5.0.0": {
+      "sha512": "Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/4.7.0",
+      "path": "microsoft.win32.systemevents/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.Win32.SystemEvents.dll",
         "lib/net461/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+        "microsoft.win32.systemevents.5.0.0.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "ref/net461/Microsoft.Win32.SystemEvents.dll",
         "ref/net461/Microsoft.Win32.SystemEvents.xml",
-        "ref/net472/Microsoft.Win32.SystemEvents.dll",
-        "ref/net472/Microsoft.Win32.SystemEvents.xml",
         "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
         "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
@@ -3180,6 +3230,41 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Otp.NET/1.2.2": {
+      "sha512": "2hrZfkbzeWJ3tNXXt/1beg4IY+nS4F3gIfh4NVFvW0f6Pj51hGpiJ4prBz7Dmrr4ZYrA96rTERVGieZ4xYm7jA==",
+      "type": "package",
+      "path": "otp.net/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Otp.NET.dll",
+        "lib/netstandard1.3/Otp.NET.dll",
+        "lib/netstandard2.0/Otp.NET.dll",
+        "otp.net.1.2.2.nupkg.sha512",
+        "otp.net.nuspec"
+      ]
+    },
+    "QRCoder/1.4.3": {
+      "sha512": "fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "type": "package",
+      "path": "qrcoder/1.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/QRCoder.dll",
+        "lib/net40/QRCoder.dll",
+        "lib/net5.0-windows7.0/QRCoder.dll",
+        "lib/net5.0/QRCoder.dll",
+        "lib/net6.0-windows7.0/QRCoder.dll",
+        "lib/net6.0/QRCoder.dll",
+        "lib/netstandard1.3/QRCoder.dll",
+        "lib/netstandard2.0/QRCoder.dll",
+        "nuget-icon.png",
+        "nuget-readme.md",
+        "qrcoder.1.4.3.nupkg.sha512",
+        "qrcoder.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -4342,18 +4427,21 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/4.7.0": {
-      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+    "System.Drawing.Common/5.0.3": {
+      "sha512": "rEQZuslijqdsO0pkJn7LtGBaMc//YVA8de0meGihkg9oLPaN+w+/Pb5d71lgp0YjPoKgBKNMvdq0IPnoW4PEng==",
       "type": "package",
-      "path": "system.drawing.common/4.7.0",
+      "path": "system.drawing.common/5.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net461/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -4375,7 +4463,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.5.0.3.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -7576,29 +7664,31 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BCrypt.Net-Next >= 4.0.2",
+      "GoogleAuthenticator >= 2.4.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.14",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.14",
+      "Otp.NET >= 1.2.2",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "System.IdentityModel.Tokens.Jwt >= 6.16.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\47509398894.INFOSCS\\.nuget\\packages\\": {}
+    "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
       "projectName": "CarometroAPI",
-      "projectPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\CarometroAPI.csproj",
-      "packagesPath": "C:\\Users\\47509398894.INFOSCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47509398894.INFOSCS\\Desktop\\Carômetro_InnerProject\\API\\CarometroAPI\\obj\\",
+      "projectPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "packagesPath": "C:\\Users\\48544763898.INFOSCS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\48544763898.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\47509398894.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\48544763898.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7628,6 +7718,10 @@
             "target": "Package",
             "version": "[4.0.2, )"
           },
+          "GoogleAuthenticator": {
+            "target": "Package",
+            "version": "[2.4.0, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[5.0.14, )"
@@ -7650,6 +7744,10 @@
             "target": "Package",
             "version": "[5.0.14, )"
           },
+          "Otp.NET": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -7669,12 +7767,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7683,7 +7775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -52,6 +52,26 @@ namespace CarometroAPI.Controllers
         }
 
         /// <summary>
+        /// Valida um token
+        /// </summary>
+        /// <param name="idCracha">id do crachá a ser validado</param>
+        /// <returns>Um resposta booleana encontrado com status code - 200</returns>
+        [HttpGet("validar/{idCracha}")]
+        public IActionResult ValidarToken(int idCracha)
+        {
+            bool validado = _crachaRepository.ValidarToken(idCracha);
+
+            if (validado == false)
+            {
+                return BadRequest("O Crachá informado está vencido!");
+            }
+            else
+            {
+                return Ok("O Crachá informado está válido!");
+            }
+        }
+
+        /// <summary>
         /// Cadastra um Cracha
         /// </summary>
         /// <param name="novoCracha">Cracha a ser cadastrado</param>

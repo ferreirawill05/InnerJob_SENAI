@@ -11,5 +11,6 @@ namespace CarometroAPI.Interfaces
         void Atualizar(Cracha crachaAtualizado);
         void Deletar(int idCracha);
         void GerarToken(int idCracha);
+        bool ValidarToken(int idCracha);
     }
 }

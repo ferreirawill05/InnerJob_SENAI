@@ -17,6 +17,7 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={Login} />
+        <Route path="/notFound" component={NotFound} /> 
         <Redirect to="/notFound" />
       </Switch>
     </div>

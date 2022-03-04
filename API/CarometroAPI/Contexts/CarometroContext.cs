@@ -32,7 +32,7 @@ namespace CarometroAPI.Contexts
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Data Source=NOTE0113D3\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113I2\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=Senai@132;");
+                optionsBuilder.UseSqlServer("Data Source=RTC22\\SQLEXPRESS; initial catalog=CAROMETRO; user Id=sa; pwd=senai@132;");
             }
         }
 

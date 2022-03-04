@@ -1,15 +1,11 @@
-import '../Login/Login.css';
+import '../../assets/css/NotFound.css';
 
 
 function NotFound() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="App_nf">
+        <header className="App-nf">
           <h1>404 - Página não encontrada</h1>
-          {/* <div className="links">
-            <Link to="/">Home</Link>
-        <Link to="/Login">Login</Link>
-          </div> */}
         </header>
           
         

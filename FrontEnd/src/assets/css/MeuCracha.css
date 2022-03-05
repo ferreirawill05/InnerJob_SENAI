@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.container_cracha{
+.container_cracha {
     /* background-color: blue; */
     width: 100vw;
     height: 100vh;
@@ -25,35 +26,53 @@
 .seta_retorno {
     width: 40px;
     height: 40px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+
 }
 
-.border{
-    border: 18px solid #66249A;
+.border {
+    border: 18px solid #DD1D00;
     border-radius: 25px;
-    width: 290px;
-    height: 400px;
+    width: 414px;
+    height: 618px;
     background-image: url(../img/img_padrao_cracha.png);
 }
 
-.cracha_aluno{
+.cracha_aluno {
     width: 254px;
     height: 364px;
 }
 
-.logo{
-    height: 40px;
-    border: 10px solid red;
+.logo {
+    height: 60px;
+    border: 7px solid red;
+    margin-top: 50px;
 }
 
-.aluno{
-    height: 200px;
-    
+.aluno {
+    height: 232px;
+
 }
 
-.fundo{
+.space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+}
+
+.fundo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+}
+
+.fundo span {
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
 }

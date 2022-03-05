@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace CarometroAPI.Controllers
 {
@@ -155,6 +156,25 @@ namespace CarometroAPI.Controllers
             _usuarioRepository.Deletar(idUsuario);
 
             return StatusCode(204);
+        }
+
+        /// <summary>
+        /// Consulta os dados de um único usuário
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("uses")]
+        public IActionResult ListarMeu()
+        {
+            try
+            {
+                int idUsuario = Convert.ToInt32(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                return Ok(_usuarioRepository.ListarMeu(idUsuario));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest( ex);
+            }
         }
     }
 }

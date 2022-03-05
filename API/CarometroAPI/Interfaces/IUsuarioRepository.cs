@@ -8,6 +8,7 @@ namespace CarometroAPI.Interfaces
     {
         Usuario Login(string email, string senha);
         Usuario BuscarPorId(int idUsuario);
+        List<Usuario> ListarMeu(int id);
         void Cadastrar(Usuario novoUsuario);
         System.Collections.Generic.List<Usuario> Listar();
         void Atualizar(Usuario usuarioAtualizado);

@@ -252,5 +252,11 @@
             <param name="idUsuario">id do Usuário a ser deletado</param>
             <returns>Um status code 204 - No content</returns>
         </member>
+        <member name="M:CarometroAPI.Controllers.UsuariosController.ListarMeu">
+            <summary>
+            Consulta os dados de um único usuário
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

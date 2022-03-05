@@ -20,7 +20,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.14": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.7.1"
@@ -2271,10 +2271,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.14": {
-      "sha512": "n718JBDXLCMGx0KZvC/xHt98fao70mAKjEMjElYNrFwEqTL58foajV1pJpGpg7QZwfMNtmf4wPrDYnK8KdsV6Q==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.10": {
+      "sha512": "WGMw2zDSgLcxSO0jwBPpp20e+LpvAFe/AhUlEQIV5IkPJOIZtEKbF58tRZb/qoAIJ00GfREsSLZAey1OVDI2KA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/5.0.14",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/5.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2282,7 +2282,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.5.0.14.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -7576,7 +7576,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BCrypt.Net-Next >= 4.0.2",
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.14",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.10",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
@@ -7586,19 +7586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\50928811867.INFOSCS\\.nuget\\packages\\": {}
+    "C:\\Users\\Ricardo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
       "projectName": "CarometroAPI",
-      "projectPath": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
-      "packagesPath": "C:\\Users\\50928811867.INFOSCS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\50928811867.INFOSCS\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
+      "projectPath": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\CarometroAPI.csproj",
+      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ricardo\\Desktop\\InnerJob_SENAI\\API\\CarometroAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\50928811867.INFOSCS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7630,7 +7630,7 @@
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[5.0.14, )"
+            "version": "[5.0.10, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
@@ -7677,7 +7677,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

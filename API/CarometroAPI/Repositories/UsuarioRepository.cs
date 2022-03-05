@@ -109,6 +109,26 @@ namespace CarometroAPI.Repositories
             return ctx.Usuarios.ToList();
         }
 
+        public List<Usuario> ListarMeu(int id)
+        {
+            return ctx.Usuarios.Select(c => new Usuario
+            {
+                IdUsuario = c.IdUsuario,
+                IdTipoUsuario = c.IdTipoUsuario,
+                IdInstituicao = c.IdInstituicao,
+                NomeUsuario = c.NomeUsuario,
+                Rg = c.Rg,
+                Email = c.Email,
+                Senha = c.Senha,
+                Imagem = c.Imagem,
+                Alunos = c.Alunos,
+                Crachas = c.Crachas,
+                Professors = c.Professors
+            })
+            .Where(c => c.IdUsuario == id)
+            .ToList();
+        }
+
         public Usuario Login(string email, string senha)
         {
             Usuario usuarioEncontrado = ctx.Usuarios.FirstOrDefault(u => u.Email == email);

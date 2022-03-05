@@ -14,6 +14,7 @@ import NotFound from './pages/NotFound/NotFound.js';
 
 
 import reportWebVitals from './reportWebVitals';
+import permissao from './pages/Permissao/Permissao';
 
 
 
@@ -23,6 +24,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={Login} />
         <Route path="/perfil" component={Perfil} />
+        <Route path="/permissao" component={permissao} />
         <Route path="/cadastro" component={Cadastro} />
         <Route path="/listar" component={Listar} />
         <Route path="/meucracha" component={MeuCracha} />

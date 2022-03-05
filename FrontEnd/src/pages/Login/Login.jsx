@@ -45,7 +45,7 @@ export default class Login extends Component {
               break;
             case '3':
               //prof
-              this.props.history.push('/cracha')
+              this.props.history.push('/meucracha')
               break;
             default:
               this.props.history.push('/')
